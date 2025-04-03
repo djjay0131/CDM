@@ -124,10 +124,10 @@ def generate_dependency_matrix(manifest_path, entity_colors, output_file="depend
     graph.render(graph_output, cleanup=True)
 
 def main():
-    base_path = r'C:\Code\CIDM\schemaDocuments\FinancialServices\PropertyandCasualtyDataModel'
+    base_path = r'C:\Code\CDM\schemaDocuments\FinancialServices\PropertyandCasualtyDataModel'
     manifest_file = os.path.join(base_path, 'PropertyandCasualtyDataModel.1.0.1.manifest.cdm.json')
 
-    # base_path = r'C:\Code\CIDM\schemaDocuments\core\applicationCommon'
+    # base_path = r'C:\Code\CDM\schemaDocuments\core\applicationCommon'
     # manifest_file = os.path.join(base_path, 'applicationCommon.1.5.manifest.cdm.json')
 
     graph = Digraph(comment='Entity Relationship Diagram', graph_attr={'rankdir': 'LR', 'nodesep': '1', 'ranksep': '2'})
